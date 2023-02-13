@@ -39,7 +39,7 @@ let months_array = [
 
 
 async function forecastWeather(country){
-   let res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b06cf363aab84bf89b205346222210&q=${country}&days=3`)
+   let res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b6e1e559dc4944be823112835231302&q=${country}&days=3`)
    if(res.status != 400){
     finalRes  = await res.json()
     console.log(finalRes.current)
